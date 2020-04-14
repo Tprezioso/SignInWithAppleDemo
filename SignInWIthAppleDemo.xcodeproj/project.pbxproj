@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9FA031BE244655F2002663A5 /* SignInWIthAppleDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInWIthAppleDemo.entitlements; sourceTree = "<group>"; };
 		9FCFF6472445274700B342F3 /* SignInWIthAppleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInWIthAppleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCFF64A2445274700B342F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FCFF64C2445274700B342F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		9FCFF6492445274700B342F3 /* SignInWIthAppleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9FA031BE244655F2002663A5 /* SignInWIthAppleDemo.entitlements */,
 				9FCFF64A2445274700B342F3 /* AppDelegate.swift */,
 				9FCFF64C2445274700B342F3 /* SceneDelegate.swift */,
 				9FCFF64E2445274700B342F3 /* ContentView.swift */,
@@ -284,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWIthAppleDemo/SignInWIthAppleDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SignInWIthAppleDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 6JBM5ZNF6C;
@@ -304,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWIthAppleDemo/SignInWIthAppleDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SignInWIthAppleDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 6JBM5ZNF6C;

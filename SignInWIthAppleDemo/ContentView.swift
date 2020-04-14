@@ -7,10 +7,21 @@
 //
 
 import SwiftUI
+import AuthenticationServices
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        SignInWithAppleView()
+            .frame(width:200, height: 40)
+    }
+}
+
+struct SignInWithAppleView: UIViewRepresentable {
+func makeUIView(context: Context) -> ASAuthorizationAppleIDButton {
+        ASAuthorizationAppleIDButton()
+    }
+    
+    func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: Context) {
     }
 }
 
