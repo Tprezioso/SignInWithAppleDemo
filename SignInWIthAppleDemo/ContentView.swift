@@ -11,18 +11,25 @@ import AuthenticationServices
 
 struct ContentView: View {
     var body: some View {
-        SignInWithAppleView()
-            .frame(width:200, height: 40)
+        SignInWithAppleButtonView()
+            .frame(width:250, height: 40)
     }
 }
 
-struct SignInWithAppleView: UIViewRepresentable {
-func makeUIView(context: Context) -> ASAuthorizationAppleIDButton {
-        ASAuthorizationAppleIDButton()
+struct SignInWithAppleButtonView: UIViewRepresentable {
+    
+    func makeUIView(context: Context) -> ASAuthorizationAppleIDButton {
+//        ASAuthorizationAppleIDButton()
+        let button = ASAuthorizationAppleIDButton(authorizationButtonType: .signIn, authorizationButtonStyle: .black)
+        return button
     }
     
     func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: Context) {
+        
     }
+
+    
+
 }
 
 struct ContentView_Previews: PreviewProvider {
